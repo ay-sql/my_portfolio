@@ -30,16 +30,7 @@ export default function CertifSection() {
 
               {/* Overlay */}
               <div className="absolute inset-0 bg-black/60 transition-opacity duration-300 flex flex-col items-center justify-center p-6">
-                {/* Logo with white background */}
-                <div className="relative w-20 h-20 mb-4 bg-white rounded-full p-2 shadow-lg">
-                  <Image
-                    src={cert.logo}
-                    alt={`${cert.title} logo`}
-                    fill
-                    className="object-contain p-1"
-                  />
-                </div>
-
+              
                 {/* Title */}
                 <h3 className="text-white text-xl font-semibold text-center mb-4">
                   {cert.title}

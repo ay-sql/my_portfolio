@@ -15,7 +15,7 @@ const testimonials: Testimonial[] = [
     name: "John Doe",
     role: "CEO",
     company: "Tech Corp",
-    image: "/img/test.jpg",
+    image: "/img/john.jpeg",
     content: "Working with this developer was an absolute pleasure. They delivered exceptional results on time and within budget.",
   },
   {
@@ -23,7 +23,7 @@ const testimonials: Testimonial[] = [
     name: "Jane Smith",
     role: "Product Manager",
     company: "Design Studio",
-    image: "/img/test.jpg",
+    image: "/img/jane.jpeg",
     content: "Their attention to detail and creative problem-solving skills made our project a huge success.",
   },
   {
@@ -31,7 +31,7 @@ const testimonials: Testimonial[] = [
     name: "Mike Johnson",
     role: "CTO",
     company: "Startup Inc",
-    image: "/img/test.jpg",
+    image: "/img/mike.jpg",
     content: "An excellent developer who brings both technical expertise and creative insights to every project.",
   },
 ];

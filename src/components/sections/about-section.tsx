@@ -9,7 +9,7 @@ export default function AboutSection() {
           <div className="flex-1 flex justify-center">
             <div className="relative w-[280px] h-[280px] md:w-[400px] md:h-[400px]">
               <Image
-                src="/img/test.jpg"
+                src="/img/Ayoub.jpg"
                 alt="About Me"
                 fill
                 className="object-cover rounded-lg"

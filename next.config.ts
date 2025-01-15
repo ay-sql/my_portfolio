@@ -1,14 +1,22 @@
-import type { NextConfig } from "next";
-
 /** @type {import('next').NextConfig} */
-
-const nextConfig: NextConfig = {
-  /* config options here */
-
-  eslint: {
-    ignoreDuringBuilds: true, // Temporarily ignore ESLint errors during build
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        pathname: '/**',
+      },
+    ],
   },
+  experimental: {
+    serverActions: {
+      enabled: true
+    }
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+}
 
-};
-
-export default nextConfig;
+module.exports = nextConfig

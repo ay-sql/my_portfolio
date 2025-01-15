@@ -2,11 +2,11 @@ import { Metadata } from "next";
 import HeroSection from "@/components/sections/hero-section";
 import AboutSection from "@/components/sections/about-section";
 import PortfolioSection from "@/components/sections/portfolio-section";
-import SkillsSection from "@/components/sections/skills-section";
+// import SkillsSection from "@/components/sections/skills-section";
 import BlogSection from "@/components/sections/blog-section";
 import ContactSection from "@/components/sections/contact-section";
-import TestimonialsSection from "@/components/sections/testimonials-section";
-import CertifSection from "@/components/sections/certif-section";
+// import TestimonialsSection from "@/components/sections/testimonials-section";
+// import CertifSection from "@/components/sections/certif-section";
 
 export const metadata: Metadata = {
   title: "Portfolio - Home",
@@ -19,9 +19,9 @@ export default async function HomePage() {
       <HeroSection />
       <AboutSection />
       <PortfolioSection />
-      <CertifSection/>
-      <SkillsSection />
-      <TestimonialsSection />
+      {/* <CertifSection/> */}
+      {/* <SkillsSection /> */}
+      {/* <TestimonialsSection /> */}
       <BlogSection />
       <ContactSection />
     </main>

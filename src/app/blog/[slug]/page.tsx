@@ -75,7 +75,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           blurDataURL={post.image}
         />
         <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
-        <div className="container relative flex h-full items-end pb-16">
+        <div className="container relative flex h-full items-end pb-16  px-10">
           <div className="mb-8 max-w-3xl space-y-4">
             {/* Tags moved to top */}
             {post.tags && post.tags.length > 0 && (
@@ -105,7 +105,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       </div>
 
       {/* Content Section */}
-      <div className="container py-12">
+      <div className="container py-12  px-16">
         <div className="prose prose-lg mx-auto dark:prose-invert">
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </div>

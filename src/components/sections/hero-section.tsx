@@ -20,15 +20,6 @@ const defaultContent: HeroContent = {
   ctaLink: '#contact'
 };
 
-const LoadingSpinner = memo(() => (
-  <div className="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
-    <div className="flex flex-col items-center gap-4">
-      <div className="w-8 h-8 border-4 border-white border-t-transparent rounded-full animate-spin" />
-      <p className="text-white font-medium">Loading...</p>
-    </div>
-  </div>
-));
-LoadingSpinner.displayName = 'LoadingSpinner';
 
 const HeroButtons = memo(({ ctaLink, ctaText }: { ctaLink: string; ctaText: string }) => (
   <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center">
@@ -92,7 +83,6 @@ function HeroSectionComponent() {
 
   return (
     <section className="w-full min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-muted relative">
-      {isLoading && <LoadingSpinner />}
       <div className="container mx-auto px-4 md:px-6 flex flex-col items-center justify-center gap-6 md:gap-12">
         <div className="flex-1 space-y-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tighter">
